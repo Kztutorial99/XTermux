@@ -41,3 +41,5 @@ Jika mau, saya bisa:
 - Memperluas UI (RecyclerView, screen detail per-paket)
 - Menghubungkan release otomatis ke GitHub Releases (publish signed APK)
 - Mengubah build untuk target SDK tertentu
+
+# Auto Update
