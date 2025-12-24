@@ -1,0 +1,18 @@
+// Root-level build.gradle (Groovy)
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.1.0"
+        // NOTE: Sesuaikan versi gradle plugin dengan wrapper
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
