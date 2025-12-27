@@ -1,0 +1,2 @@
+rootProject.name = 'Termu'
+include ':app'
