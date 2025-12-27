@@ -30,8 +30,16 @@ jobs:
         with:
           gradle-version: '8.6'
 
+      - name: Ensure gradlew executable
+        run: chmod +x ./gradlew
+
+      - name: Show gradle wrapper version
+        run: ./gradlew --version
+
       - name: Build debug APK
-        run: gradle assembleDebug
+        env:
+          ANDROID_SDK_ROOT: ${{ steps.setup-android.outputs.sdk-root }}
+        run: ./gradlew assembleDebug --no-daemon
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
