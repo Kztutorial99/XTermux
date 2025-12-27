@@ -2,7 +2,7 @@
 set -e
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WRAPPER_DIR="$ROOT_DIR/gradle/wrapper"
-VERSION=8.6
+VERSION=9.2.1
 DIST_URL="https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip"
 LOCAL_DIST_DIR="$ROOT_DIR/.gradle/gradle-${VERSION}"
 
